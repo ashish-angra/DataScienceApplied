@@ -29,11 +29,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "ashish.angra@shell.com"
     },
-    "lastModifiedOn": 1697718485608,
+    "lastModifiedOn": 1697718600079,
     "extendedProperties": {}
   },
   "creationTag": {
@@ -63,14 +63,12 @@
   },
   "schema": {
     "columns": [
-      {"name":"col_0","type":"string","maxLength":4194304},
-      {"name":"col_0_iso","type":"date"},
+      {"name":"Date","type":"date"},
       {"name":"HDDs","type":"double"},
       {"name":"CDDs","type":"double"},
       {"name":"Prod Index","type":"double"},
       {"name":"PMI","type":"double"},
       {"name":"Real GDP","type":"double"},
-      {"name":"col_6","type":"string","maxLength":4194304},
       {"name":"Non-Power (Convencional nacional)","type":"double"},
       {"name":"Electricity (Sector electrico)","type":"double"}
     ],
