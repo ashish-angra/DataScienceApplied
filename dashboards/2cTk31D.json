@@ -1,0 +1,36 @@
+{
+  "pages": [
+    {
+      "id": "Wx13Gk8",
+      "grid": {
+        "tiles": []
+      },
+      "showTitle": false
+    }
+  ],
+  "owner": "ashish.angra@shell.com",
+  "listed": true,
+  "name": "GasDemandV2\u0027s default dashboard",
+  "showGrid": true,
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "ashish.angra@shell.com"
+    },
+    "lastModifiedOn": 1697717916392,
+    "extendedProperties": {}
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "ashish.angra@shell.com"
+    },
+    "lastModifiedOn": 1697717916392,
+    "extendedProperties": {}
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}
