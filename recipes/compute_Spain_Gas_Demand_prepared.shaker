@@ -70,6 +70,7 @@
       "disabled": false,
       "type": "CreateColumnWithGREL",
       "params": {
+        "expression": "val(\"Non-Power (Convencional nacional)\") * 0.0093 * 0.01",
         "column": "Conv_Demand_bcm"
       },
       "alwaysShowComment": false
@@ -106,6 +107,7 @@
     "col_6": 100,
     "Electricity (Sector electrico)": 240,
     "col_0": 100,
+    "Conv_Demand_bcm": 155,
     "Prod Index": 134,
     "Non-Power (Convencional nacional)": 263,
     "HDDs": 148,
