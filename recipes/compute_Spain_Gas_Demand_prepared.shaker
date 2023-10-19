@@ -29,8 +29,42 @@
   },
   "explorationFilters": [],
   "columnUseScientificNotationByName": {},
-  "exploreUIParams": {},
-  "steps": [],
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "steps": [
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnsSelector",
+      "params": {
+        "columns": [
+          "col_0",
+          "col_6"
+        ],
+        "keep": false,
+        "appliesTo": "COLUMNS"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnRenamer",
+      "params": {
+        "renamings": [
+          {
+            "from": "col_0_iso",
+            "to": "Date"
+          }
+        ]
+      },
+      "alwaysShowComment": false
+    }
+  ],
   "maxProcessedMemTableBytes": -1,
   "previewMode": "ALL_ROWS",
   "vizSampling": {
@@ -57,7 +91,19 @@
     "autoRefreshSample": false
   },
   "analysisColumnData": {},
-  "columnWidthsByName": {},
+  "columnWidthsByName": {
+    "col_0_iso": 183,
+    "col_6": 100,
+    "Electricity (Sector electrico)": 240,
+    "col_0": 100,
+    "Prod Index": 134,
+    "Non-Power (Convencional nacional)": 263,
+    "HDDs": 148,
+    "Real GDP": 134,
+    "PMI": 134,
+    "Date": 183,
+    "CDDs": 148
+  },
   "sorting": [],
   "globalSearchQuery": "",
   "coloring": {
