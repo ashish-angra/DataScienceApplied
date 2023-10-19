@@ -139,8 +139,9 @@
     },
     "dkuProperties": []
   },
-  "name": "GasDemandV2",
+  "name": "GasDemandDemo",
   "projectStatus": "Sandbox",
+  "imgPattern": 1,
   "metrics": {
     "probes": [],
     "engineConfig": {
@@ -195,6 +196,14 @@
     "displayedState": {
       "checks": []
     }
+  },
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "ashish.angra@shell.com"
+    },
+    "lastModifiedOn": 1697717947184,
+    "extendedProperties": {}
   },
   "creationTag": {
     "versionNumber": 0,
