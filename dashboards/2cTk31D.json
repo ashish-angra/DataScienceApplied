@@ -9,8 +9,8 @@
             "box": {
               "top": 0,
               "left": 0,
-              "width": 2,
-              "height": 2
+              "width": 5,
+              "height": 3
             },
             "clickAction": "DO_NOTHING",
             "tileParams": {
@@ -39,11 +39,11 @@
   "name": "GasDemandV2\u0027s default dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "ashish.angra@shell.com"
     },
-    "lastModifiedOn": 1697804833837,
+    "lastModifiedOn": 1697804841242,
     "extendedProperties": {}
   },
   "creationTag": {
