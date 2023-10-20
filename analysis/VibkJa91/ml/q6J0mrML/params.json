@@ -5,8 +5,9 @@
     "weightMethod": "NO_WEIGHTING"
   },
   "time": {
-    "enabled": false,
-    "ascending": true
+    "enabled": true,
+    "ascending": true,
+    "timeVariable": "Date"
   },
   "calibration": {
     "calibrationMethod": "NO_CALIBRATION"
@@ -205,6 +206,7 @@
       },
       "Date": {
         "generate_derivative": false,
+        "missing_handling": "DROP_ROW",
         "impute_constant_value": 0.0,
         "keep_regular": false,
         "quantile_bin_nb_bins": 4,
@@ -218,7 +220,6 @@
           "autoModifiedByDSS": false,
           "recordedMeaning": "Date"
         },
-        "autoReason": "REJECT_IDENTIFIER",
         "customHandlingCode": "",
         "customProcessorWantsMatrix": false,
         "sendToInput": "main"
@@ -894,7 +895,7 @@
           }
         }
       },
-      "enabled": true
+      "enabled": false
     },
     "ridge_regression": {
       "alphaMode": "MANUAL",
@@ -938,11 +939,11 @@
           "scaling": "LOGARITHMIC"
         }
       },
-      "enabled": false
+      "enabled": true
     },
     "leastsquare_regression": {
       "n_jobs": 2,
-      "enabled": false
+      "enabled": true
     },
     "sgd_regression": {
       "epsilon": {
@@ -2283,7 +2284,13 @@
       "epsilon": 1.0E-6,
       "optimizer": "BFGS"
     },
-    "custom_python": [],
+    "custom_python": [
+      {
+        "enabled": true,
+        "code": "from sklearn.linear_model import LinearRegression\nclf \u003d LinearRegression()\n",
+        "name": "Linear Regression"
+      }
+    ],
     "plugin_python": {},
     "keras": {
       "epochs": 10,
@@ -3253,7 +3260,7 @@
     },
     "grid_search": true,
     "gridSearchParams": {
-      "mode": "KFOLD",
+      "mode": "TIME_SERIES_KFOLD",
       "splitRatio": 0.8,
       "shuffleIterations": 1,
       "nFolds": 5,
@@ -3292,7 +3299,7 @@
   "targetVariable": "Conv_Demand_bcm",
   "splitParams": {
     "ttPolicy": "SPLIT_SINGLE_DATASET",
-    "ssdSplitMode": "RANDOM",
+    "ssdSplitMode": "SORTED",
     "splitBeforePrepare": true,
     "ssdSelection": {
       "useMemTable": false,
@@ -3317,6 +3324,7 @@
     "ssdStratified": false,
     "ssdGrouped": false,
     "ssdSeed": 1337,
+    "ssdColumn": "Date",
     "testOnLargerValues": true,
     "streamAll": false,
     "kfold": false,
