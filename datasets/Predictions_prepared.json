@@ -29,11 +29,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "ashish.angra@shell.com"
     },
-    "lastModifiedOn": 1697805465337,
+    "lastModifiedOn": 1697805542499,
     "extendedProperties": {}
   },
   "creationTag": {
@@ -70,7 +70,7 @@
       {"name":"Prod Index","type":"double"},
       {"name":"PMI","type":"double"},
       {"name":"Real GDP","type":"double"},
-      {"name":"prediction","type":"float"}
+      {"name":"Conv_demand_bcm","type":"double"}
     ],
     "userModified": true
   },
