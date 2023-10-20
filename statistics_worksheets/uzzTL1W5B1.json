@@ -1745,17 +1745,42 @@
           "type": "CONTINUOUS"
         },
         "id": "O2WqXwf"
+      },
+      {
+        "type": "fit_curve",
+        "curves": [
+          {
+            "type": "polynomial",
+            "degree": 3
+          },
+          {
+            "type": "isotonic"
+          },
+          {
+            "type": "polynomial",
+            "degree": 4
+          }
+        ],
+        "xColumn": {
+          "name": "HDDs",
+          "type": "CONTINUOUS"
+        },
+        "yColumn": {
+          "name": "Conv_Demand_bcm",
+          "type": "CONTINUOUS"
+        },
+        "id": "VPQnqiz"
       }
     ],
     "id": "91H7AhH"
   },
   "name": "Worksheet",
   "versionTag": {
-    "versionNumber": 13,
+    "versionNumber": 14,
     "lastModifiedBy": {
       "login": "ashish.angra@shell.com"
     },
-    "lastModifiedOn": 1697798905471,
+    "lastModifiedOn": 1697799611625,
     "extendedProperties": {}
   },
   "creationTag": {
