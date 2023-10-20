@@ -1,7 +1,7 @@
 {
   "type": "chart",
   "params": {
-    "datasetSmartName": "Spain_Gas_Demand___Future_Predictors_scored",
+    "datasetSmartName": "Predictions",
     "engineType": "LINO",
     "refreshableSelection": {
       "selection": {
@@ -247,6 +247,7 @@
         "defaultRadius": 5.0,
         "singleShape": "FILLED_CIRCLE"
       },
+      "computeMode": "NORMAL",
       "xAxisMode": "NORMAL",
       "yAxisMode": "NORMAL",
       "pieOptions": {
@@ -298,11 +299,11 @@
   "name": "Avg of prediction by Date_iso on Spain_Gas_Demand___Future_Predictors_scored",
   "dashboardCreationId": "2cTk31D",
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "ashish.angra@shell.com"
     },
-    "lastModifiedOn": 1697804833118,
+    "lastModifiedOn": 1697805095270,
     "extendedProperties": {}
   },
   "creationTag": {
