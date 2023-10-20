@@ -1,7 +1,16 @@
 {
   "name": "Model Training and Building",
   "color": "#31439C",
-  "items": [],
+  "items": [
+    {
+      "objectId": "train_Predict_Conv_Demand_bcm__regression_",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "t1rQoR33",
+      "objectType": "SAVED_MODEL"
+    }
+  ],
   "shared": [],
   "tags": [],
   "customFields": {},
