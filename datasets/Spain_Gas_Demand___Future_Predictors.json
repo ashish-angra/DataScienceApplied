@@ -41,11 +41,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "ashish.angra@shell.com"
     },
-    "lastModifiedOn": 1697804596077,
+    "lastModifiedOn": 1697804596344,
     "extendedProperties": {}
   },
   "creationTag": {
@@ -58,9 +58,23 @@
   },
   "tags": [],
   "params": {
-    "uploadBoxId": "bc05884aca557772899363e35723d10364ea2c3d20caa83405fa31fb3e04a340",
-    "uploadConnection": "dataiku-managed-storage",
     "uploadFSProviderType": "S3",
+    "uploadedConfig": {
+      "bucket": "gis-data-us-east-1",
+      "metastoreSynchronizationEnabled": true,
+      "metastoreDatabaseName": "default",
+      "metastoreTableName": "${projectKey}_Spain_Gas_Demand___Future_Predictors",
+      "connection": "dataiku-managed-storage",
+      "path": "/managed-dss-data/uploads/${projectKey}/Spain_Gas_Demand___Future_Predictors",
+      "notReadyIfEmpty": false,
+      "filesSelectionRules": {
+        "mode": "ALL",
+        "excludeRules": [],
+        "includeRules": [],
+        "explicitFiles": []
+      }
+    },
+    "connection": "dataiku-managed-storage",
     "notReadyIfEmpty": false,
     "filesSelectionRules": {
       "mode": "ALL",
