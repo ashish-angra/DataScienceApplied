@@ -512,17 +512,695 @@
           }
         ],
         "id": "C0Fmgto"
+      },
+      {
+        "type": "bivariate_header",
+        "yColumn": {
+          "name": "Conv_Demand_bcm",
+          "type": "CONTINUOUS"
+        },
+        "showMosaicPlot": true,
+        "showHistogram": true,
+        "showScatterPlot": true,
+        "showFrequencyTable": true,
+        "showBoxPlot": true,
+        "showSummary": true,
+        "xColumns": [
+          {
+            "name": "HDDs",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "CDDs",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "Prod Index",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "PMI",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "Real GDP",
+            "type": "CONTINUOUS"
+          }
+        ],
+        "cards": [
+          {
+            "type": "column_card",
+            "column": {
+              "name": "HDDs",
+              "type": "CONTINUOUS"
+            },
+            "cards": [
+              {
+                "type": "scatter_plot",
+                "symbolSize": 4,
+                "maxNumberOfPoints": 100000,
+                "showTrend": false,
+                "xColumn": {
+                  "name": "HDDs",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Conv_Demand_bcm",
+                  "type": "CONTINUOUS"
+                },
+                "id": "xOCTvZC"
+              },
+              {
+                "type": "bivariate_box_plot",
+                "maxValues": 5,
+                "groupOthers": true,
+                "binningMode": "AUTO",
+                "customBinningBoundaries": [],
+                "xColumn": {
+                  "name": "HDDs",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Conv_Demand_bcm",
+                  "type": "CONTINUOUS"
+                },
+                "id": "SXC7U3B"
+              },
+              {
+                "type": "bivariate_histogram",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "HDDs",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Conv_Demand_bcm",
+                  "type": "CONTINUOUS"
+                },
+                "id": "nlCT2K2"
+              },
+              {
+                "type": "mosaic_plot",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "HDDs",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Conv_Demand_bcm",
+                  "type": "CONTINUOUS"
+                },
+                "id": "YWiL19A"
+              },
+              {
+                "type": "bivariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "compute": {
+                  "spearman": true,
+                  "pearson": true,
+                  "totalCount": true,
+                  "covariance": true,
+                  "kendallTau": true,
+                  "mutualInformation": true,
+                  "completeCount": true,
+                  "chi2": false,
+                  "oneWayAnova": false,
+                  "nSampleMood": false,
+                  "kolmogorovSmirnov": false
+                },
+                "xColumn": {
+                  "name": "HDDs",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Conv_Demand_bcm",
+                  "type": "CONTINUOUS"
+                },
+                "id": "RoJiDtV"
+              },
+              {
+                "type": "bivariate_frequency_table",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "HDDs",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Conv_Demand_bcm",
+                  "type": "CONTINUOUS"
+                },
+                "id": "xBs040I"
+              }
+            ],
+            "id": "TaXYMze"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "CDDs",
+              "type": "CONTINUOUS"
+            },
+            "cards": [
+              {
+                "type": "scatter_plot",
+                "symbolSize": 4,
+                "maxNumberOfPoints": 100000,
+                "showTrend": false,
+                "xColumn": {
+                  "name": "CDDs",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Conv_Demand_bcm",
+                  "type": "CONTINUOUS"
+                },
+                "id": "YVicPAz"
+              },
+              {
+                "type": "bivariate_box_plot",
+                "maxValues": 5,
+                "groupOthers": true,
+                "binningMode": "AUTO",
+                "customBinningBoundaries": [],
+                "xColumn": {
+                  "name": "CDDs",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Conv_Demand_bcm",
+                  "type": "CONTINUOUS"
+                },
+                "id": "iaOUIA6"
+              },
+              {
+                "type": "bivariate_histogram",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "CDDs",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Conv_Demand_bcm",
+                  "type": "CONTINUOUS"
+                },
+                "id": "XVdEAzt"
+              },
+              {
+                "type": "mosaic_plot",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "CDDs",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Conv_Demand_bcm",
+                  "type": "CONTINUOUS"
+                },
+                "id": "Edogxv2"
+              },
+              {
+                "type": "bivariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "compute": {
+                  "spearman": true,
+                  "pearson": true,
+                  "totalCount": true,
+                  "covariance": true,
+                  "kendallTau": true,
+                  "mutualInformation": true,
+                  "completeCount": true,
+                  "chi2": false,
+                  "oneWayAnova": false,
+                  "nSampleMood": false,
+                  "kolmogorovSmirnov": false
+                },
+                "xColumn": {
+                  "name": "CDDs",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Conv_Demand_bcm",
+                  "type": "CONTINUOUS"
+                },
+                "id": "uHsRz6O"
+              },
+              {
+                "type": "bivariate_frequency_table",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "CDDs",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Conv_Demand_bcm",
+                  "type": "CONTINUOUS"
+                },
+                "id": "9HZ6e67"
+              }
+            ],
+            "id": "NBPaDAV"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "Prod Index",
+              "type": "CONTINUOUS"
+            },
+            "cards": [
+              {
+                "type": "scatter_plot",
+                "symbolSize": 4,
+                "maxNumberOfPoints": 100000,
+                "showTrend": false,
+                "xColumn": {
+                  "name": "Prod Index",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Conv_Demand_bcm",
+                  "type": "CONTINUOUS"
+                },
+                "id": "TRJLGk6"
+              },
+              {
+                "type": "bivariate_box_plot",
+                "maxValues": 5,
+                "groupOthers": true,
+                "binningMode": "AUTO",
+                "customBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Prod Index",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Conv_Demand_bcm",
+                  "type": "CONTINUOUS"
+                },
+                "id": "WfnSaLK"
+              },
+              {
+                "type": "bivariate_histogram",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Prod Index",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Conv_Demand_bcm",
+                  "type": "CONTINUOUS"
+                },
+                "id": "p4YAclq"
+              },
+              {
+                "type": "mosaic_plot",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Prod Index",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Conv_Demand_bcm",
+                  "type": "CONTINUOUS"
+                },
+                "id": "LTYgEgI"
+              },
+              {
+                "type": "bivariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "compute": {
+                  "spearman": true,
+                  "pearson": true,
+                  "totalCount": true,
+                  "covariance": true,
+                  "kendallTau": true,
+                  "mutualInformation": true,
+                  "completeCount": true,
+                  "chi2": false,
+                  "oneWayAnova": false,
+                  "nSampleMood": false,
+                  "kolmogorovSmirnov": false
+                },
+                "xColumn": {
+                  "name": "Prod Index",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Conv_Demand_bcm",
+                  "type": "CONTINUOUS"
+                },
+                "id": "VLancrD"
+              },
+              {
+                "type": "bivariate_frequency_table",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Prod Index",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Conv_Demand_bcm",
+                  "type": "CONTINUOUS"
+                },
+                "id": "cs8jm5u"
+              }
+            ],
+            "id": "vGL7ko2"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "PMI",
+              "type": "CONTINUOUS"
+            },
+            "cards": [
+              {
+                "type": "scatter_plot",
+                "symbolSize": 4,
+                "maxNumberOfPoints": 100000,
+                "showTrend": false,
+                "xColumn": {
+                  "name": "PMI",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Conv_Demand_bcm",
+                  "type": "CONTINUOUS"
+                },
+                "id": "HHNYDsA"
+              },
+              {
+                "type": "bivariate_box_plot",
+                "maxValues": 5,
+                "groupOthers": true,
+                "binningMode": "AUTO",
+                "customBinningBoundaries": [],
+                "xColumn": {
+                  "name": "PMI",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Conv_Demand_bcm",
+                  "type": "CONTINUOUS"
+                },
+                "id": "RDMb6dN"
+              },
+              {
+                "type": "bivariate_histogram",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "PMI",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Conv_Demand_bcm",
+                  "type": "CONTINUOUS"
+                },
+                "id": "tqd5AiC"
+              },
+              {
+                "type": "mosaic_plot",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "PMI",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Conv_Demand_bcm",
+                  "type": "CONTINUOUS"
+                },
+                "id": "j0DSWi4"
+              },
+              {
+                "type": "bivariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "compute": {
+                  "spearman": true,
+                  "pearson": true,
+                  "totalCount": true,
+                  "covariance": true,
+                  "kendallTau": true,
+                  "mutualInformation": true,
+                  "completeCount": true,
+                  "chi2": false,
+                  "oneWayAnova": false,
+                  "nSampleMood": false,
+                  "kolmogorovSmirnov": false
+                },
+                "xColumn": {
+                  "name": "PMI",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Conv_Demand_bcm",
+                  "type": "CONTINUOUS"
+                },
+                "id": "AdJXIIy"
+              },
+              {
+                "type": "bivariate_frequency_table",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "PMI",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Conv_Demand_bcm",
+                  "type": "CONTINUOUS"
+                },
+                "id": "YIBI030"
+              }
+            ],
+            "id": "5pKmYbY"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "Real GDP",
+              "type": "CONTINUOUS"
+            },
+            "cards": [
+              {
+                "type": "scatter_plot",
+                "symbolSize": 4,
+                "maxNumberOfPoints": 100000,
+                "showTrend": false,
+                "xColumn": {
+                  "name": "Real GDP",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Conv_Demand_bcm",
+                  "type": "CONTINUOUS"
+                },
+                "id": "mCnOGWV"
+              },
+              {
+                "type": "bivariate_box_plot",
+                "maxValues": 5,
+                "groupOthers": true,
+                "binningMode": "AUTO",
+                "customBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Real GDP",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Conv_Demand_bcm",
+                  "type": "CONTINUOUS"
+                },
+                "id": "MIdjv9a"
+              },
+              {
+                "type": "bivariate_histogram",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Real GDP",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Conv_Demand_bcm",
+                  "type": "CONTINUOUS"
+                },
+                "id": "DS7F6ES"
+              },
+              {
+                "type": "mosaic_plot",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Real GDP",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Conv_Demand_bcm",
+                  "type": "CONTINUOUS"
+                },
+                "id": "MEfJazz"
+              },
+              {
+                "type": "bivariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "compute": {
+                  "spearman": true,
+                  "pearson": true,
+                  "totalCount": true,
+                  "covariance": true,
+                  "kendallTau": true,
+                  "mutualInformation": true,
+                  "completeCount": true,
+                  "chi2": false,
+                  "oneWayAnova": false,
+                  "nSampleMood": false,
+                  "kolmogorovSmirnov": false
+                },
+                "xColumn": {
+                  "name": "Real GDP",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Conv_Demand_bcm",
+                  "type": "CONTINUOUS"
+                },
+                "id": "fuQFz8o"
+              },
+              {
+                "type": "bivariate_frequency_table",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Real GDP",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Conv_Demand_bcm",
+                  "type": "CONTINUOUS"
+                },
+                "id": "zeOWUAq"
+              }
+            ],
+            "id": "Xi5VTL4"
+          }
+        ],
+        "id": "9b9vrR2"
       }
     ],
     "id": "91H7AhH"
   },
   "name": "Worksheet",
   "versionTag": {
-    "versionNumber": 10,
+    "versionNumber": 11,
     "lastModifiedBy": {
       "login": "ashish.angra@shell.com"
     },
-    "lastModifiedOn": 1697797582156,
+    "lastModifiedOn": 1697798442321,
     "extendedProperties": {}
   },
   "creationTag": {
