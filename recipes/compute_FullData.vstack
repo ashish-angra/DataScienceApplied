@@ -65,21 +65,18 @@
       ]
     },
     {
-      "preFilter": {
-        "distinct": false,
-        "enabled": false
-      },
-      "originLabel": "Predictions",
+      "preFilter": {},
+      "originLabel": "Predictions_prepared",
       "index": 1,
       "columnsMatch": [
-        "Date",
-        "HDDs",
-        "CDDs",
-        "Prod Index",
-        "PMI",
-        "Real GDP",
         "",
-        "prediction"
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
       ]
     }
   ],
@@ -118,7 +115,7 @@
           },
           {
             "name": "prediction",
-            "type": "float"
+            "type": "string"
           }
         ],
         "userModified": false
