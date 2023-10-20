@@ -1,7 +1,12 @@
 {
   "name": "Forward Data Collection",
   "color": "#0F786B",
-  "items": [],
+  "items": [
+    {
+      "objectId": "Spain_Gas_Demand___Future_Predictors",
+      "objectType": "DATASET"
+    }
+  ],
   "shared": [],
   "tags": [],
   "customFields": {},
