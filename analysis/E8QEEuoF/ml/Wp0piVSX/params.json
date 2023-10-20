@@ -5,8 +5,9 @@
     "weightMethod": "NO_WEIGHTING"
   },
   "time": {
-    "enabled": false,
-    "ascending": true
+    "enabled": true,
+    "ascending": true,
+    "timeVariable": "Date"
   },
   "calibration": {
     "calibrationMethod": "NO_CALIBRATION"
@@ -100,7 +101,7 @@
         "binarize_threshold_mode": "MEDIAN",
         "binarize_constant_threshold": 0.0,
         "datetime_cyclical_periods": [],
-        "role": "INPUT",
+        "role": "REJECT",
         "type": "NUMERIC",
         "state": {
           "userModified": false,
@@ -169,7 +170,7 @@
         "binarize_threshold_mode": "MEDIAN",
         "binarize_constant_threshold": 0.0,
         "datetime_cyclical_periods": [],
-        "role": "INPUT",
+        "role": "REJECT",
         "type": "NUMERIC",
         "state": {
           "userModified": false,
@@ -205,6 +206,7 @@
       },
       "Date": {
         "generate_derivative": false,
+        "missing_handling": "DROP_ROW",
         "impute_constant_value": 0.0,
         "keep_regular": false,
         "quantile_bin_nb_bins": 4,
@@ -218,7 +220,6 @@
           "autoModifiedByDSS": false,
           "recordedMeaning": "Date"
         },
-        "autoReason": "REJECT_IDENTIFIER",
         "customHandlingCode": "",
         "customProcessorWantsMatrix": false,
         "sendToInput": "main"
@@ -235,7 +236,7 @@
         "binarize_threshold_mode": "MEDIAN",
         "binarize_constant_threshold": 0.0,
         "datetime_cyclical_periods": [],
-        "role": "INPUT",
+        "role": "REJECT",
         "type": "NUMERIC",
         "state": {
           "userModified": false,
@@ -3259,7 +3260,7 @@
     },
     "grid_search": true,
     "gridSearchParams": {
-      "mode": "KFOLD",
+      "mode": "TIME_SERIES_KFOLD",
       "splitRatio": 0.8,
       "shuffleIterations": 1,
       "nFolds": 5,
@@ -3298,7 +3299,7 @@
   "targetVariable": "Conv_Demand_bcm",
   "splitParams": {
     "ttPolicy": "SPLIT_SINGLE_DATASET",
-    "ssdSplitMode": "RANDOM",
+    "ssdSplitMode": "SORTED",
     "splitBeforePrepare": true,
     "ssdSelection": {
       "useMemTable": false,
@@ -3323,6 +3324,7 @@
     "ssdStratified": false,
     "ssdGrouped": false,
     "ssdSeed": 1337,
+    "ssdColumn": "Date",
     "testOnLargerValues": true,
     "streamAll": false,
     "kfold": false,
