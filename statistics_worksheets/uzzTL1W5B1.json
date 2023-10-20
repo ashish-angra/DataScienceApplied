@@ -1808,17 +1808,48 @@
           }
         ],
         "id": "2rDdqex"
+      },
+      {
+        "type": "parallel_coordinates_plot",
+        "maxNumberOfPoints": 10000,
+        "columns": [
+          {
+            "name": "CDDs",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "HDDs",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "Prod Index",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "PMI",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "Real GDP",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "Conv_Demand_bcm",
+            "type": "CONTINUOUS"
+          }
+        ],
+        "id": "79BMy7c"
       }
     ],
     "id": "91H7AhH"
   },
   "name": "Worksheet",
   "versionTag": {
-    "versionNumber": 15,
+    "versionNumber": 16,
     "lastModifiedBy": {
       "login": "ashish.angra@shell.com"
     },
-    "lastModifiedOn": 1697800030960,
+    "lastModifiedOn": 1697800170567,
     "extendedProperties": {}
   },
   "creationTag": {
