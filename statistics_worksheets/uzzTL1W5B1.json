@@ -1736,17 +1736,26 @@
           }
         ],
         "id": "QmSuIMm"
+      },
+      {
+        "type": "shapiro",
+        "confidenceLevel": 0.95,
+        "column": {
+          "name": "Conv_Demand_bcm",
+          "type": "CONTINUOUS"
+        },
+        "id": "O2WqXwf"
       }
     ],
     "id": "91H7AhH"
   },
   "name": "Worksheet",
   "versionTag": {
-    "versionNumber": 12,
+    "versionNumber": 13,
     "lastModifiedBy": {
       "login": "ashish.angra@shell.com"
     },
-    "lastModifiedOn": 1697798793527,
+    "lastModifiedOn": 1697798905471,
     "extendedProperties": {}
   },
   "creationTag": {
