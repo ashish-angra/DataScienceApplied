@@ -44,6 +44,10 @@
           {
             "from": "prediction",
             "to": "Conv_Demand_bcm"
+          },
+          {
+            "from": "Date_iso",
+            "to": "Date"
           }
         ]
       },
