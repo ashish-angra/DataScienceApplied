@@ -30,16 +30,499 @@
     "type": "worksheet_root",
     "confidenceLevel": 0.95,
     "showConfidenceInterval": false,
-    "cards": [],
+    "cards": [
+      {
+        "type": "univariate_header",
+        "showHistogram": true,
+        "showQuantile": true,
+        "showFrequencyTable": false,
+        "showSummary": true,
+        "showBoxPlot": true,
+        "showCumulativeDistributionFunction": true,
+        "xColumns": [
+          {
+            "name": "HDDs",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "Conv_Demand_bcm",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "CDDs",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "PMI",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "Prod Index",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "Real GDP",
+            "type": "CONTINUOUS"
+          }
+        ],
+        "cards": [
+          {
+            "type": "column_card",
+            "column": {
+              "name": "HDDs",
+              "type": "CONTINUOUS"
+            },
+            "cards": [
+              {
+                "type": "numerical_histogram",
+                "showBoxPlot": true,
+                "showHistogram": true,
+                "binningMode": "AUTO",
+                "nbBins": 25,
+                "customBinningBoundaries": [],
+                "column": {
+                  "name": "HDDs",
+                  "type": "CONTINUOUS"
+                },
+                "id": "mDRZWQg"
+              },
+              {
+                "type": "cdf_plot",
+                "column": {
+                  "name": "HDDs",
+                  "type": "CONTINUOUS"
+                },
+                "id": "wFdhWEO"
+              },
+              {
+                "type": "univariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "compute": {
+                  "totalCount": true,
+                  "mean": true,
+                  "sum": false,
+                  "median": true,
+                  "std": true,
+                  "variance": false,
+                  "skewness": false,
+                  "kurtosis": false,
+                  "sem": false,
+                  "completeCount": true,
+                  "nbEmpty": true,
+                  "zeroCount": false,
+                  "zeroRatio": false,
+                  "nonZeroRatio": false,
+                  "iqr": false,
+                  "distinctCount": true,
+                  "nbNonEmpty": false,
+                  "min": true,
+                  "max": true,
+                  "range": false,
+                  "mode": true
+                },
+                "column": {
+                  "name": "HDDs",
+                  "type": "CONTINUOUS"
+                },
+                "id": "tX7xxiz"
+              },
+              {
+                "type": "quantile_table",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "column": {
+                  "name": "HDDs",
+                  "type": "CONTINUOUS"
+                },
+                "id": "6ig7TUP"
+              }
+            ],
+            "id": "n6O2vGB"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "Conv_Demand_bcm",
+              "type": "CONTINUOUS"
+            },
+            "cards": [
+              {
+                "type": "numerical_histogram",
+                "showBoxPlot": true,
+                "showHistogram": true,
+                "binningMode": "AUTO",
+                "nbBins": 25,
+                "customBinningBoundaries": [],
+                "column": {
+                  "name": "Conv_Demand_bcm",
+                  "type": "CONTINUOUS"
+                },
+                "id": "z9dOcPL"
+              },
+              {
+                "type": "cdf_plot",
+                "column": {
+                  "name": "Conv_Demand_bcm",
+                  "type": "CONTINUOUS"
+                },
+                "id": "Gi5BOuj"
+              },
+              {
+                "type": "univariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "compute": {
+                  "totalCount": true,
+                  "mean": true,
+                  "sum": false,
+                  "median": true,
+                  "std": true,
+                  "variance": false,
+                  "skewness": false,
+                  "kurtosis": false,
+                  "sem": false,
+                  "completeCount": true,
+                  "nbEmpty": true,
+                  "zeroCount": false,
+                  "zeroRatio": false,
+                  "nonZeroRatio": false,
+                  "iqr": false,
+                  "distinctCount": true,
+                  "nbNonEmpty": false,
+                  "min": true,
+                  "max": true,
+                  "range": false,
+                  "mode": true
+                },
+                "column": {
+                  "name": "Conv_Demand_bcm",
+                  "type": "CONTINUOUS"
+                },
+                "id": "nmY03FC"
+              },
+              {
+                "type": "quantile_table",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "column": {
+                  "name": "Conv_Demand_bcm",
+                  "type": "CONTINUOUS"
+                },
+                "id": "vOG98Ya"
+              }
+            ],
+            "id": "hg2cTbz"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "CDDs",
+              "type": "CONTINUOUS"
+            },
+            "cards": [
+              {
+                "type": "numerical_histogram",
+                "showBoxPlot": true,
+                "showHistogram": true,
+                "binningMode": "AUTO",
+                "nbBins": 25,
+                "customBinningBoundaries": [],
+                "column": {
+                  "name": "CDDs",
+                  "type": "CONTINUOUS"
+                },
+                "id": "8VlZSZZ"
+              },
+              {
+                "type": "cdf_plot",
+                "column": {
+                  "name": "CDDs",
+                  "type": "CONTINUOUS"
+                },
+                "id": "vHGEDvt"
+              },
+              {
+                "type": "univariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "compute": {
+                  "totalCount": true,
+                  "mean": true,
+                  "sum": false,
+                  "median": true,
+                  "std": true,
+                  "variance": false,
+                  "skewness": false,
+                  "kurtosis": false,
+                  "sem": false,
+                  "completeCount": true,
+                  "nbEmpty": true,
+                  "zeroCount": false,
+                  "zeroRatio": false,
+                  "nonZeroRatio": false,
+                  "iqr": false,
+                  "distinctCount": true,
+                  "nbNonEmpty": false,
+                  "min": true,
+                  "max": true,
+                  "range": false,
+                  "mode": true
+                },
+                "column": {
+                  "name": "CDDs",
+                  "type": "CONTINUOUS"
+                },
+                "id": "dfCT3Zl"
+              },
+              {
+                "type": "quantile_table",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "column": {
+                  "name": "CDDs",
+                  "type": "CONTINUOUS"
+                },
+                "id": "zu1TFS8"
+              }
+            ],
+            "id": "sKZ6D8V"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "PMI",
+              "type": "CONTINUOUS"
+            },
+            "cards": [
+              {
+                "type": "numerical_histogram",
+                "showBoxPlot": true,
+                "showHistogram": true,
+                "binningMode": "AUTO",
+                "nbBins": 25,
+                "customBinningBoundaries": [],
+                "column": {
+                  "name": "PMI",
+                  "type": "CONTINUOUS"
+                },
+                "id": "TD0clJt"
+              },
+              {
+                "type": "cdf_plot",
+                "column": {
+                  "name": "PMI",
+                  "type": "CONTINUOUS"
+                },
+                "id": "ANurtnO"
+              },
+              {
+                "type": "univariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "compute": {
+                  "totalCount": true,
+                  "mean": true,
+                  "sum": false,
+                  "median": true,
+                  "std": true,
+                  "variance": false,
+                  "skewness": false,
+                  "kurtosis": false,
+                  "sem": false,
+                  "completeCount": true,
+                  "nbEmpty": true,
+                  "zeroCount": false,
+                  "zeroRatio": false,
+                  "nonZeroRatio": false,
+                  "iqr": false,
+                  "distinctCount": true,
+                  "nbNonEmpty": false,
+                  "min": true,
+                  "max": true,
+                  "range": false,
+                  "mode": true
+                },
+                "column": {
+                  "name": "PMI",
+                  "type": "CONTINUOUS"
+                },
+                "id": "nkSz815"
+              },
+              {
+                "type": "quantile_table",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "column": {
+                  "name": "PMI",
+                  "type": "CONTINUOUS"
+                },
+                "id": "RzfSrGr"
+              }
+            ],
+            "id": "jsap7TS"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "Prod Index",
+              "type": "CONTINUOUS"
+            },
+            "cards": [
+              {
+                "type": "numerical_histogram",
+                "showBoxPlot": true,
+                "showHistogram": true,
+                "binningMode": "AUTO",
+                "nbBins": 25,
+                "customBinningBoundaries": [],
+                "column": {
+                  "name": "Prod Index",
+                  "type": "CONTINUOUS"
+                },
+                "id": "pxJrXGe"
+              },
+              {
+                "type": "cdf_plot",
+                "column": {
+                  "name": "Prod Index",
+                  "type": "CONTINUOUS"
+                },
+                "id": "SKAcVNq"
+              },
+              {
+                "type": "univariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "compute": {
+                  "totalCount": true,
+                  "mean": true,
+                  "sum": false,
+                  "median": true,
+                  "std": true,
+                  "variance": false,
+                  "skewness": false,
+                  "kurtosis": false,
+                  "sem": false,
+                  "completeCount": true,
+                  "nbEmpty": true,
+                  "zeroCount": false,
+                  "zeroRatio": false,
+                  "nonZeroRatio": false,
+                  "iqr": false,
+                  "distinctCount": true,
+                  "nbNonEmpty": false,
+                  "min": true,
+                  "max": true,
+                  "range": false,
+                  "mode": true
+                },
+                "column": {
+                  "name": "Prod Index",
+                  "type": "CONTINUOUS"
+                },
+                "id": "vOdR4Kb"
+              },
+              {
+                "type": "quantile_table",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "column": {
+                  "name": "Prod Index",
+                  "type": "CONTINUOUS"
+                },
+                "id": "oCLzRt4"
+              }
+            ],
+            "id": "88um3Xk"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "Real GDP",
+              "type": "CONTINUOUS"
+            },
+            "cards": [
+              {
+                "type": "numerical_histogram",
+                "showBoxPlot": true,
+                "showHistogram": true,
+                "binningMode": "AUTO",
+                "nbBins": 25,
+                "customBinningBoundaries": [],
+                "column": {
+                  "name": "Real GDP",
+                  "type": "CONTINUOUS"
+                },
+                "id": "PUDivmN"
+              },
+              {
+                "type": "cdf_plot",
+                "column": {
+                  "name": "Real GDP",
+                  "type": "CONTINUOUS"
+                },
+                "id": "k7ySnRF"
+              },
+              {
+                "type": "univariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "compute": {
+                  "totalCount": true,
+                  "mean": true,
+                  "sum": false,
+                  "median": true,
+                  "std": true,
+                  "variance": false,
+                  "skewness": false,
+                  "kurtosis": false,
+                  "sem": false,
+                  "completeCount": true,
+                  "nbEmpty": true,
+                  "zeroCount": false,
+                  "zeroRatio": false,
+                  "nonZeroRatio": false,
+                  "iqr": false,
+                  "distinctCount": true,
+                  "nbNonEmpty": false,
+                  "min": true,
+                  "max": true,
+                  "range": false,
+                  "mode": true
+                },
+                "column": {
+                  "name": "Real GDP",
+                  "type": "CONTINUOUS"
+                },
+                "id": "ETMXIRT"
+              },
+              {
+                "type": "quantile_table",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "column": {
+                  "name": "Real GDP",
+                  "type": "CONTINUOUS"
+                },
+                "id": "sX1MOP4"
+              }
+            ],
+            "id": "hErDXLg"
+          }
+        ],
+        "id": "cE1eFRT"
+      }
+    ],
     "id": "91H7AhH"
   },
   "name": "Worksheet",
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "ashish.angra@shell.com"
     },
-    "lastModifiedOn": 1697797200387,
+    "lastModifiedOn": 1697797233359,
     "extendedProperties": {}
   },
   "creationTag": {
