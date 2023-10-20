@@ -69,13 +69,13 @@
       "originLabel": "Predictions_prepared",
       "index": 1,
       "columnsMatch": [
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
+        "Date",
+        "HDDs",
+        "CDDs",
+        "Prod Index",
+        "PMI",
+        "Real GDP",
+        "Conv_Demand_bcm",
         ""
       ]
     }
