@@ -29,11 +29,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "ashish.angra@shell.com"
     },
-    "lastModifiedOn": 1697805573352,
+    "lastModifiedOn": 1697805790181,
     "extendedProperties": {}
   },
   "creationTag": {
@@ -64,7 +64,6 @@
   "schema": {
     "columns": [
       {"name":"Date","type":"date"},
-      {"name":"Date_iso","type":"date"},
       {"name":"HDDs","type":"double"},
       {"name":"CDDs","type":"double"},
       {"name":"Prod Index","type":"double"},
