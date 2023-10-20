@@ -1839,17 +1839,51 @@
           }
         ],
         "id": "79BMy7c"
+      },
+      {
+        "type": "stl_decomposition",
+        "params": {
+          "seasonal": 7,
+          "decompositionType": "ADDITIVE",
+          "robust": true,
+          "seasonalDeg": "CONSTANT",
+          "trendDeg": "CONSTANT",
+          "lowPassDeg": "CONSTANT",
+          "seasonalJump": 1,
+          "trendJump": 1,
+          "lowPassJump": 1,
+          "showSummary": true
+        },
+        "showCompactChart": false,
+        "dataZoomStart": 0.0,
+        "dataZoomEnd": 73.87165,
+        "selectedSeries": [
+          "OBSERVED",
+          "TREND",
+          "SEASONALITY",
+          "RESIDUALS"
+        ],
+        "seriesColumn": {
+          "name": "Conv_Demand_bcm",
+          "type": "CONTINUOUS"
+        },
+        "timeColumn": {
+          "name": "Date",
+          "type": "CATEGORICAL"
+        },
+        "seriesIdentifiers": [],
+        "id": "Mh775nR"
       }
     ],
     "id": "91H7AhH"
   },
   "name": "Worksheet",
   "versionTag": {
-    "versionNumber": 16,
+    "versionNumber": 21,
     "lastModifiedBy": {
       "login": "ashish.angra@shell.com"
     },
-    "lastModifiedOn": 1697800170567,
+    "lastModifiedOn": 1697800291734,
     "extendedProperties": {}
   },
   "creationTag": {
