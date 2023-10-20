@@ -1,7 +1,17 @@
 {
   "dashboardAuthorizations": {
     "allAuthorized": false,
-    "authorizations": []
+    "authorizations": [
+      {
+        "objectRef": {
+          "objectId": "Spain_Gas_Demand___Future_Predictors_scored",
+          "objectType": "DATASET"
+        },
+        "modes": [
+          "READ"
+        ]
+      }
+    ]
   },
   "exposedObjects": {
     "objects": []
@@ -216,11 +226,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
-      "login": "api:KBS4GVVAZCVDSBAT"
+      "login": "ashish.angra@shell.com"
     },
-    "lastModifiedOn": 1697720995454,
+    "lastModifiedOn": 1697804832769,
     "extendedProperties": {}
   },
   "creationTag": {
