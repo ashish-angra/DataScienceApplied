@@ -1190,17 +1190,563 @@
           }
         ],
         "id": "9b9vrR2"
+      },
+      {
+        "type": "bivariate_header",
+        "yColumn": {
+          "name": "HDDs",
+          "type": "CONTINUOUS"
+        },
+        "showMosaicPlot": true,
+        "showHistogram": true,
+        "showScatterPlot": true,
+        "showFrequencyTable": true,
+        "showBoxPlot": true,
+        "showSummary": true,
+        "xColumns": [
+          {
+            "name": "CDDs",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "Prod Index",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "PMI",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "Real GDP",
+            "type": "CONTINUOUS"
+          }
+        ],
+        "cards": [
+          {
+            "type": "column_card",
+            "column": {
+              "name": "CDDs",
+              "type": "CONTINUOUS"
+            },
+            "cards": [
+              {
+                "type": "scatter_plot",
+                "symbolSize": 4,
+                "maxNumberOfPoints": 100000,
+                "showTrend": false,
+                "xColumn": {
+                  "name": "CDDs",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "HDDs",
+                  "type": "CONTINUOUS"
+                },
+                "id": "ItF0Z5E"
+              },
+              {
+                "type": "bivariate_box_plot",
+                "maxValues": 5,
+                "groupOthers": true,
+                "binningMode": "AUTO",
+                "customBinningBoundaries": [],
+                "xColumn": {
+                  "name": "CDDs",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "HDDs",
+                  "type": "CONTINUOUS"
+                },
+                "id": "G8Ktxan"
+              },
+              {
+                "type": "bivariate_histogram",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "CDDs",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "HDDs",
+                  "type": "CONTINUOUS"
+                },
+                "id": "KYGkQiN"
+              },
+              {
+                "type": "mosaic_plot",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "CDDs",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "HDDs",
+                  "type": "CONTINUOUS"
+                },
+                "id": "ssBzZLc"
+              },
+              {
+                "type": "bivariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "compute": {
+                  "spearman": true,
+                  "pearson": true,
+                  "totalCount": true,
+                  "covariance": true,
+                  "kendallTau": true,
+                  "mutualInformation": true,
+                  "completeCount": true,
+                  "chi2": false,
+                  "oneWayAnova": false,
+                  "nSampleMood": false,
+                  "kolmogorovSmirnov": false
+                },
+                "xColumn": {
+                  "name": "CDDs",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "HDDs",
+                  "type": "CONTINUOUS"
+                },
+                "id": "sr8Ztzo"
+              },
+              {
+                "type": "bivariate_frequency_table",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "CDDs",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "HDDs",
+                  "type": "CONTINUOUS"
+                },
+                "id": "nLwTl1M"
+              }
+            ],
+            "id": "89gZiqX"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "Prod Index",
+              "type": "CONTINUOUS"
+            },
+            "cards": [
+              {
+                "type": "scatter_plot",
+                "symbolSize": 4,
+                "maxNumberOfPoints": 100000,
+                "showTrend": false,
+                "xColumn": {
+                  "name": "Prod Index",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "HDDs",
+                  "type": "CONTINUOUS"
+                },
+                "id": "nEHaJ0m"
+              },
+              {
+                "type": "bivariate_box_plot",
+                "maxValues": 5,
+                "groupOthers": true,
+                "binningMode": "AUTO",
+                "customBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Prod Index",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "HDDs",
+                  "type": "CONTINUOUS"
+                },
+                "id": "1v9DtU2"
+              },
+              {
+                "type": "bivariate_histogram",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Prod Index",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "HDDs",
+                  "type": "CONTINUOUS"
+                },
+                "id": "4nNZZgT"
+              },
+              {
+                "type": "mosaic_plot",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Prod Index",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "HDDs",
+                  "type": "CONTINUOUS"
+                },
+                "id": "a4KMbUK"
+              },
+              {
+                "type": "bivariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "compute": {
+                  "spearman": true,
+                  "pearson": true,
+                  "totalCount": true,
+                  "covariance": true,
+                  "kendallTau": true,
+                  "mutualInformation": true,
+                  "completeCount": true,
+                  "chi2": false,
+                  "oneWayAnova": false,
+                  "nSampleMood": false,
+                  "kolmogorovSmirnov": false
+                },
+                "xColumn": {
+                  "name": "Prod Index",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "HDDs",
+                  "type": "CONTINUOUS"
+                },
+                "id": "CqNdZVR"
+              },
+              {
+                "type": "bivariate_frequency_table",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Prod Index",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "HDDs",
+                  "type": "CONTINUOUS"
+                },
+                "id": "VwDb8DU"
+              }
+            ],
+            "id": "Q7pi8Zr"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "PMI",
+              "type": "CONTINUOUS"
+            },
+            "cards": [
+              {
+                "type": "scatter_plot",
+                "symbolSize": 4,
+                "maxNumberOfPoints": 100000,
+                "showTrend": false,
+                "xColumn": {
+                  "name": "PMI",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "HDDs",
+                  "type": "CONTINUOUS"
+                },
+                "id": "3jYmsXh"
+              },
+              {
+                "type": "bivariate_box_plot",
+                "maxValues": 5,
+                "groupOthers": true,
+                "binningMode": "AUTO",
+                "customBinningBoundaries": [],
+                "xColumn": {
+                  "name": "PMI",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "HDDs",
+                  "type": "CONTINUOUS"
+                },
+                "id": "DXnE1PP"
+              },
+              {
+                "type": "bivariate_histogram",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "PMI",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "HDDs",
+                  "type": "CONTINUOUS"
+                },
+                "id": "pLfhT67"
+              },
+              {
+                "type": "mosaic_plot",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "PMI",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "HDDs",
+                  "type": "CONTINUOUS"
+                },
+                "id": "3hBWMuf"
+              },
+              {
+                "type": "bivariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "compute": {
+                  "spearman": true,
+                  "pearson": true,
+                  "totalCount": true,
+                  "covariance": true,
+                  "kendallTau": true,
+                  "mutualInformation": true,
+                  "completeCount": true,
+                  "chi2": false,
+                  "oneWayAnova": false,
+                  "nSampleMood": false,
+                  "kolmogorovSmirnov": false
+                },
+                "xColumn": {
+                  "name": "PMI",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "HDDs",
+                  "type": "CONTINUOUS"
+                },
+                "id": "PKUKSK5"
+              },
+              {
+                "type": "bivariate_frequency_table",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "PMI",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "HDDs",
+                  "type": "CONTINUOUS"
+                },
+                "id": "iHIzsD4"
+              }
+            ],
+            "id": "uApm2cK"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "Real GDP",
+              "type": "CONTINUOUS"
+            },
+            "cards": [
+              {
+                "type": "scatter_plot",
+                "symbolSize": 4,
+                "maxNumberOfPoints": 100000,
+                "showTrend": false,
+                "xColumn": {
+                  "name": "Real GDP",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "HDDs",
+                  "type": "CONTINUOUS"
+                },
+                "id": "BEFkaeK"
+              },
+              {
+                "type": "bivariate_box_plot",
+                "maxValues": 5,
+                "groupOthers": true,
+                "binningMode": "AUTO",
+                "customBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Real GDP",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "HDDs",
+                  "type": "CONTINUOUS"
+                },
+                "id": "pV15IFp"
+              },
+              {
+                "type": "bivariate_histogram",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Real GDP",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "HDDs",
+                  "type": "CONTINUOUS"
+                },
+                "id": "zgpH1YB"
+              },
+              {
+                "type": "mosaic_plot",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Real GDP",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "HDDs",
+                  "type": "CONTINUOUS"
+                },
+                "id": "zfO8YtX"
+              },
+              {
+                "type": "bivariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "compute": {
+                  "spearman": true,
+                  "pearson": true,
+                  "totalCount": true,
+                  "covariance": true,
+                  "kendallTau": true,
+                  "mutualInformation": true,
+                  "completeCount": true,
+                  "chi2": false,
+                  "oneWayAnova": false,
+                  "nSampleMood": false,
+                  "kolmogorovSmirnov": false
+                },
+                "xColumn": {
+                  "name": "Real GDP",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "HDDs",
+                  "type": "CONTINUOUS"
+                },
+                "id": "sfqecHB"
+              },
+              {
+                "type": "bivariate_frequency_table",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Real GDP",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "HDDs",
+                  "type": "CONTINUOUS"
+                },
+                "id": "ZIlr4q4"
+              }
+            ],
+            "id": "IHq0lC0"
+          }
+        ],
+        "id": "QmSuIMm"
       }
     ],
     "id": "91H7AhH"
   },
   "name": "Worksheet",
   "versionTag": {
-    "versionNumber": 11,
+    "versionNumber": 12,
     "lastModifiedBy": {
       "login": "ashish.angra@shell.com"
     },
-    "lastModifiedOn": 1697798442321,
+    "lastModifiedOn": 1697798793527,
     "extendedProperties": {}
   },
   "creationTag": {
