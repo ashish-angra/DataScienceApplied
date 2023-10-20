@@ -29,8 +29,27 @@
   },
   "explorationFilters": [],
   "columnUseScientificNotationByName": {},
-  "exploreUIParams": {},
-  "steps": [],
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "steps": [
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnRenamer",
+      "params": {
+        "renamings": [
+          {
+            "from": "prediction",
+            "to": "Conv_demand_bcm"
+          }
+        ]
+      },
+      "alwaysShowComment": false
+    }
+  ],
   "maxProcessedMemTableBytes": -1,
   "previewMode": "ALL_ROWS",
   "vizSampling": {
@@ -57,7 +76,17 @@
     "autoRefreshSample": false
   },
   "analysisColumnData": {},
-  "columnWidthsByName": {},
+  "columnWidthsByName": {
+    "Conv_demand_bcm": 155,
+    "Prod Index": 134,
+    "prediction": 141,
+    "HDDs": 148,
+    "Real GDP": 134,
+    "PMI": 141,
+    "Date": 100,
+    "Date_iso": 183,
+    "CDDs": 141
+  },
   "sorting": [],
   "globalSearchQuery": "",
   "coloring": {
