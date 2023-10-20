@@ -55,14 +55,6 @@
           {
             "name": "PMI",
             "type": "CONTINUOUS"
-          },
-          {
-            "name": "Prod Index",
-            "type": "CONTINUOUS"
-          },
-          {
-            "name": "Real GDP",
-            "type": "CONTINUOUS"
           }
         ],
         "cards": [
@@ -361,156 +353,19 @@
               }
             ],
             "id": "jsap7TS"
-          },
-          {
-            "type": "column_card",
-            "column": {
-              "name": "Prod Index",
-              "type": "CONTINUOUS"
-            },
-            "cards": [
-              {
-                "type": "numerical_histogram",
-                "showBoxPlot": true,
-                "showHistogram": true,
-                "binningMode": "AUTO",
-                "nbBins": 25,
-                "customBinningBoundaries": [],
-                "column": {
-                  "name": "Prod Index",
-                  "type": "CONTINUOUS"
-                },
-                "id": "pxJrXGe"
-              },
-              {
-                "type": "cdf_plot",
-                "column": {
-                  "name": "Prod Index",
-                  "type": "CONTINUOUS"
-                },
-                "id": "SKAcVNq"
-              },
-              {
-                "type": "univariate_summary",
-                "confidenceLevel": 0.95,
-                "showConfidenceInterval": false,
-                "compute": {
-                  "totalCount": true,
-                  "mean": true,
-                  "sum": false,
-                  "median": true,
-                  "std": true,
-                  "variance": false,
-                  "skewness": false,
-                  "kurtosis": false,
-                  "sem": false,
-                  "completeCount": true,
-                  "nbEmpty": true,
-                  "zeroCount": false,
-                  "zeroRatio": false,
-                  "nonZeroRatio": false,
-                  "iqr": false,
-                  "distinctCount": true,
-                  "nbNonEmpty": false,
-                  "min": true,
-                  "max": true,
-                  "range": false,
-                  "mode": true
-                },
-                "column": {
-                  "name": "Prod Index",
-                  "type": "CONTINUOUS"
-                },
-                "id": "vOdR4Kb"
-              },
-              {
-                "type": "quantile_table",
-                "confidenceLevel": 0.95,
-                "showConfidenceInterval": false,
-                "column": {
-                  "name": "Prod Index",
-                  "type": "CONTINUOUS"
-                },
-                "id": "oCLzRt4"
-              }
-            ],
-            "id": "88um3Xk"
-          },
-          {
-            "type": "column_card",
-            "column": {
-              "name": "Real GDP",
-              "type": "CONTINUOUS"
-            },
-            "cards": [
-              {
-                "type": "numerical_histogram",
-                "showBoxPlot": true,
-                "showHistogram": true,
-                "binningMode": "AUTO",
-                "nbBins": 25,
-                "customBinningBoundaries": [],
-                "column": {
-                  "name": "Real GDP",
-                  "type": "CONTINUOUS"
-                },
-                "id": "PUDivmN"
-              },
-              {
-                "type": "cdf_plot",
-                "column": {
-                  "name": "Real GDP",
-                  "type": "CONTINUOUS"
-                },
-                "id": "k7ySnRF"
-              },
-              {
-                "type": "univariate_summary",
-                "confidenceLevel": 0.95,
-                "showConfidenceInterval": false,
-                "compute": {
-                  "totalCount": true,
-                  "mean": true,
-                  "sum": false,
-                  "median": true,
-                  "std": true,
-                  "variance": false,
-                  "skewness": false,
-                  "kurtosis": false,
-                  "sem": false,
-                  "completeCount": true,
-                  "nbEmpty": true,
-                  "zeroCount": false,
-                  "zeroRatio": false,
-                  "nonZeroRatio": false,
-                  "iqr": false,
-                  "distinctCount": true,
-                  "nbNonEmpty": false,
-                  "min": true,
-                  "max": true,
-                  "range": false,
-                  "mode": true
-                },
-                "column": {
-                  "name": "Real GDP",
-                  "type": "CONTINUOUS"
-                },
-                "id": "ETMXIRT"
-              },
-              {
-                "type": "quantile_table",
-                "confidenceLevel": 0.95,
-                "showConfidenceInterval": false,
-                "column": {
-                  "name": "Real GDP",
-                  "type": "CONTINUOUS"
-                },
-                "id": "sX1MOP4"
-              }
-            ],
-            "id": "hErDXLg"
           }
         ],
+        "splitBy": {
+          "groupingColumn": {
+            "name": "HDDs",
+            "type": "CONTINUOUS"
+          },
+          "binningMode": "AUTO",
+          "maxValues": 5,
+          "groupWithOthers": true,
+          "customBinningBoundaries": [],
+          "groupWithAll": true
+        },
         "id": "cE1eFRT"
       }
     ],
@@ -518,11 +373,11 @@
   },
   "name": "Worksheet",
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 4,
     "lastModifiedBy": {
       "login": "ashish.angra@shell.com"
     },
-    "lastModifiedOn": 1697797233359,
+    "lastModifiedOn": 1697797407367,
     "extendedProperties": {}
   },
   "creationTag": {
