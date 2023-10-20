@@ -1,7 +1,20 @@
 {
   "name": "Historic Data Collection",
   "color": "#D03713",
-  "items": [],
+  "items": [
+    {
+      "objectId": "Spain_Gas_Demand",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_Spain_Gas_Demand_prepared",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "HistoricDataPrepared",
+      "objectType": "DATASET"
+    }
+  ],
   "shared": [],
   "tags": [],
   "customFields": {},
