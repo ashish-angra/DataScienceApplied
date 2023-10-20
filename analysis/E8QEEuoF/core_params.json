@@ -1,5 +1,5 @@
 {
-  "inputDatasetSmartName": "Spain_Gas_Demand_prepared",
+  "inputDatasetSmartName": "HistoricDtaPrepared",
   "script": {
     "steps": [],
     "maxProcessedMemTableBytes": -1,
@@ -71,11 +71,11 @@
   "charts": [],
   "name": "Interpretable modeling of Conv_Demand_bcm on Spain_Gas_Demand_prepared",
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "ashish.angra@shell.com"
     },
-    "lastModifiedOn": 1697801253979,
+    "lastModifiedOn": 1697805110965,
     "extendedProperties": {}
   },
   "creationTag": {
