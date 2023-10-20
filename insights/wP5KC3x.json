@@ -1,0 +1,321 @@
+{
+  "type": "chart",
+  "params": {
+    "datasetSmartName": "Spain_Gas_Demand___Future_Predictors_scored",
+    "engineType": "LINO",
+    "refreshableSelection": {
+      "selection": {
+        "useMemTable": false,
+        "filter": {
+          "distinct": false,
+          "enabled": false
+        },
+        "partitionSelectionMethod": "ALL",
+        "latestPartitionsN": 1,
+        "ordering": {
+          "enabled": false,
+          "rules": []
+        },
+        "samplingMethod": "HEAD_SEQUENTIAL",
+        "maxRecords": 10000,
+        "targetRatio": 0.02,
+        "ascending": true,
+        "withinFirstN": -1,
+        "maxReadUncompressedBytes": -1
+      },
+      "autoRefreshSample": false,
+      "_refreshTrigger": 0
+    },
+    "def": {
+      "type": "lines",
+      "variant": "normal",
+      "name": "Avg of prediction by Date_iso",
+      "userEditedName": false,
+      "displayWithEChartsByDefault": true,
+      "genericDimension0": [
+        {
+          "column": "Date_iso",
+          "type": "DATE",
+          "numParams": {
+            "emptyBinsMode": "AVERAGE"
+          },
+          "dateParams": {
+            "mode": "MONTH"
+          },
+          "maxValues": 0,
+          "generateOthersCategory": true,
+          "oneTickPerBin": false,
+          "filters": [],
+          "isA": "dimension",
+          "possibleSorts": [
+            {
+              "type": "NATURAL",
+              "label": "Natural ordering",
+              "sortAscending": true,
+              "$$hashKey": "object:27919"
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 0,
+              "label": "Average of prediction, descending",
+              "$$hashKey": "object:27920"
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 0,
+              "label": "Average of prediction, ascending",
+              "sortAscending": true,
+              "$$hashKey": "object:27921"
+            }
+          ],
+          "sort": {
+            "type": "NATURAL",
+            "label": "Natural ordering",
+            "sortAscending": true,
+            "$$hashKey": "object:27919"
+          }
+        }
+      ],
+      "genericDimension1": [],
+      "facetDimension": [],
+      "animationDimension": [],
+      "genericMeasures": [
+        {
+          "column": "prediction",
+          "function": "AVG",
+          "type": "NUMERICAL",
+          "displayed": true,
+          "isA": "measure",
+          "displayAxis": "axis1",
+          "displayType": "column",
+          "computeMode": "NORMAL",
+          "computeModeDim": 0,
+          "showDisplayLabel": true,
+          "labelPosition": "BOTTOM",
+          "colorRules": []
+        }
+      ],
+      "xDimension": [],
+      "yDimension": [],
+      "uaXDimension": [],
+      "uaYDimension": [],
+      "uaSize": [],
+      "uaShape": [],
+      "uaColor": [],
+      "uaTooltip": [],
+      "groupDimension": [],
+      "xMeasure": [],
+      "yMeasure": [],
+      "colorMeasure": [],
+      "sizeMeasure": [],
+      "geometry": [],
+      "geoLayers": [
+        {
+          "geometry": [],
+          "colorOptions": {
+            "singleColor": "#2678B1",
+            "transparency": 0.75,
+            "colorPalette": "default",
+            "ccScaleMode": "NORMAL",
+            "customPalette": {
+              "id": "__dku_custom__",
+              "name": "Custom Palette",
+              "colors": [],
+              "values": [],
+              "fixedValues": false
+            },
+            "paletteType": "CONTINUOUS",
+            "quantizationMode": "NONE",
+            "numQuantizeSteps": 5,
+            "paletteMiddleValue": 0.0,
+            "customColors": {},
+            "heatDensityMapIntensity": 0.5,
+            "heatDensityMapRadius": 0.5
+          },
+          "uaColor": []
+        }
+      ],
+      "tooltipMeasures": [],
+      "boxplotBreakdownDim": [],
+      "boxplotValue": [],
+      "filters": [],
+      "xAxisFormatting": {
+        "displayAxis": true,
+        "showAxisTitle": true,
+        "axisTitleFormatting": {
+          "fontSize": 15,
+          "fontColor": "#333",
+          "hasBackground": false
+        },
+        "axisValuesFormatting": {
+          "numberFormatting": {
+            "multiplier": "Auto",
+            "prefix": "",
+            "suffix": ""
+          },
+          "axisTicksFormatting": {
+            "fontSize": 12,
+            "fontColor": "#333",
+            "hasBackground": false
+          }
+        }
+      },
+      "yAxisFormatting": {
+        "displayAxis": true,
+        "showAxisTitle": true,
+        "axisTitleFormatting": {
+          "fontSize": 15,
+          "fontColor": "#333",
+          "hasBackground": false
+        },
+        "axisValuesFormatting": {
+          "numberFormatting": {
+            "multiplier": "Auto",
+            "prefix": "",
+            "suffix": ""
+          },
+          "axisTicksFormatting": {
+            "fontSize": 12,
+            "fontColor": "#333",
+            "hasBackground": false
+          }
+        }
+      },
+      "axis1LogScale": false,
+      "axis2LogScale": false,
+      "includeZero": true,
+      "smoothing": true,
+      "showLegend": true,
+      "showXAxis": false,
+      "showInChartValues": false,
+      "showInChartTotalValues": true,
+      "showInChartLabels": true,
+      "strokeWidth": 2,
+      "fillOpacity": 0.6,
+      "hexbinRadius": 20,
+      "hexbinNumber": 20,
+      "hexbinRadiusMode": "NUM_HEXAGONS",
+      "valuesInChartDisplayOptions": {
+        "overlappingStrategy": "AUTO",
+        "textFormatting": {
+          "fontSize": 11,
+          "fontColor": "#333",
+          "hasBackground": false,
+          "backgroundColor": "#D9D9D9BF"
+        }
+      },
+      "yCustomExtent": {
+        "editMode": "AUTO",
+        "manualExtent": [
+          null,
+          null
+        ]
+      },
+      "xCustomExtent": {
+        "editMode": "AUTO",
+        "manualExtent": [
+          null,
+          null
+        ]
+      },
+      "chartHeight": 200,
+      "singleXAxis": true,
+      "multiTooltips": false,
+      "animationFrameDuration": 3000,
+      "animationRepeat": true,
+      "colorOptions": {
+        "singleColor": "#2678B1",
+        "transparency": 0.75,
+        "colorPalette": "default",
+        "ccScaleMode": "NORMAL",
+        "customPalette": {
+          "id": "__dku_custom__",
+          "name": "Custom Palette",
+          "colors": [],
+          "values": [],
+          "fixedValues": false
+        },
+        "paletteType": "CONTINUOUS",
+        "quantizationMode": "NONE",
+        "numQuantizeSteps": 5,
+        "paletteMiddleValue": 0.0,
+        "customColors": {},
+        "heatDensityMapIntensity": 0.5,
+        "heatDensityMapRadius": 0.5
+      },
+      "bubblesOptions": {
+        "defaultRadius": 5.0,
+        "singleShape": "FILLED_CIRCLE"
+      },
+      "xAxisMode": "NORMAL",
+      "yAxisMode": "NORMAL",
+      "pieOptions": {
+        "donutHoleSize": 54.0
+      },
+      "scatterOptions": {
+        "equalScales": false,
+        "identityLine": false,
+        "regression": {
+          "show": false,
+          "displayFormula": false,
+          "type": "LINEAR",
+          "labelPosition": "INSIDE_END",
+          "lineColor": "#000",
+          "lineSize": 1
+        }
+      },
+      "mapOptions": {
+        "tilesLayer": "cartodb-positron",
+        "lockSquareGrid": false
+      },
+      "mapGridOptions": {
+        "gridLonDeg": 0.5,
+        "gridLatDeg": 0.5
+      },
+      "thumbnailData": "data:image/png;base64,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\u003d\u003d",
+      "useLiveProcessingIfAvailable": true,
+      "legendPlacement": "OUTER_RIGHT",
+      "legendFormatting": {
+        "fontSize": 11,
+        "fontColor": "#333",
+        "hasBackground": false
+      },
+      "pivotMeasureDisplayMode": "ROWS",
+      "pivotDisplayTotals": {
+        "subTotals": {
+          "rows": true,
+          "columns": true
+        },
+        "grandTotal": {
+          "row": true,
+          "column": true
+        }
+      }
+    }
+  },
+  "owner": "ashish.angra@shell.com",
+  "listed": false,
+  "name": "Avg of prediction by Date_iso on Spain_Gas_Demand___Future_Predictors_scored",
+  "dashboardCreationId": "2cTk31D",
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "ashish.angra@shell.com"
+    },
+    "lastModifiedOn": 1697804833118,
+    "extendedProperties": {}
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "ashish.angra@shell.com"
+    },
+    "lastModifiedOn": 1697804833118,
+    "extendedProperties": {}
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}
