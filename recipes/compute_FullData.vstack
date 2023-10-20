@@ -8,7 +8,8 @@
     "Prod Index",
     "PMI",
     "Real GDP",
-    "Conv_Demand_bcm"
+    "Conv_Demand_bcm",
+    "prediction"
   ],
   "engineParams": {
     "hive": {
@@ -59,7 +60,8 @@
         "Prod Index",
         "PMI",
         "Real GDP",
-        "Conv_Demand_bcm"
+        "Conv_Demand_bcm",
+        ""
       ]
     },
     {
@@ -76,6 +78,7 @@
         "Prod Index",
         "PMI",
         "Real GDP",
+        "",
         "prediction"
       ]
     }
@@ -112,6 +115,10 @@
           {
             "name": "Conv_Demand_bcm",
             "type": "double"
+          },
+          {
+            "name": "prediction",
+            "type": "float"
           }
         ],
         "userModified": false
