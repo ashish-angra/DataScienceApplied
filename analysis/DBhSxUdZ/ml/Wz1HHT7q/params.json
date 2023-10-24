@@ -151,7 +151,7 @@
         "binarize_threshold_mode": "MEDIAN",
         "binarize_constant_threshold": 0.0,
         "datetime_cyclical_periods": [],
-        "role": "REJECT",
+        "role": "INPUT",
         "type": "NUMERIC",
         "state": {
           "userModified": false,
@@ -174,7 +174,7 @@
         "binarize_threshold_mode": "MEDIAN",
         "binarize_constant_threshold": 0.0,
         "datetime_cyclical_periods": [],
-        "role": "REJECT",
+        "role": "INPUT",
         "type": "NUMERIC",
         "state": {
           "userModified": false,
@@ -209,7 +209,7 @@
         "frequency_default_mode": "EXPLICIT",
         "frequency_default_value": 0.0,
         "frequency_normalized": true,
-        "role": "REJECT",
+        "role": "INPUT",
         "type": "CATEGORY",
         "state": {
           "userModified": false,
@@ -233,7 +233,7 @@
         "binarize_threshold_mode": "MEDIAN",
         "binarize_constant_threshold": 0.0,
         "datetime_cyclical_periods": [],
-        "role": "REJECT",
+        "role": "INPUT",
         "type": "NUMERIC",
         "state": {
           "userModified": false,
@@ -279,7 +279,7 @@
         "binarize_threshold_mode": "MEDIAN",
         "binarize_constant_threshold": 0.0,
         "datetime_cyclical_periods": [],
-        "role": "REJECT",
+        "role": "INPUT",
         "type": "NUMERIC",
         "state": {
           "userModified": false,
@@ -2367,7 +2367,7 @@
       ]
     },
     "trivial_identity_timeseries": {
-      "enabled": false
+      "enabled": true
     },
     "seasonal_naive_timeseries": {
       "season_length": {
@@ -2386,7 +2386,7 @@
           "scaling": "LINEAR"
         }
       },
-      "enabled": false
+      "enabled": true
     },
     "autoarima_timeseries": {
       "m": {
@@ -2488,7 +2488,7 @@
       "max_order": 5,
       "stationary": false,
       "maxiter": 50,
-      "enabled": false
+      "enabled": true
     },
     "seasonal_loess_timeseries": {
       "period": {
@@ -2635,7 +2635,7 @@
       },
       "auto_trend": true,
       "auto_low_pass": true,
-      "enabled": false
+      "enabled": true
     },
     "prophet_timeseries": {
       "changepoint_prior_scale": {
@@ -2706,7 +2706,7 @@
       "daily_seasonality": "auto",
       "seed": 1337,
       "_use_external_features": false,
-      "enabled": false
+      "enabled": true
     },
     "gluonts_npts_timeseries": {
       "context_length": {
