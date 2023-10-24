@@ -58,7 +58,7 @@
         "binarize_threshold_mode": "MEDIAN",
         "binarize_constant_threshold": 0.0,
         "datetime_cyclical_periods": [],
-        "role": "INPUT",
+        "role": "REJECT",
         "type": "NUMERIC",
         "state": {
           "userModified": false,
@@ -100,7 +100,7 @@
         "binarize_threshold_mode": "MEDIAN",
         "binarize_constant_threshold": 0.0,
         "datetime_cyclical_periods": [],
-        "role": "INPUT",
+        "role": "REJECT",
         "type": "NUMERIC",
         "state": {
           "userModified": false,
@@ -123,7 +123,7 @@
         "binarize_threshold_mode": "MEDIAN",
         "binarize_constant_threshold": 0.0,
         "datetime_cyclical_periods": [],
-        "role": "INPUT",
+        "role": "REJECT",
         "type": "NUMERIC",
         "state": {
           "userModified": false,
@@ -169,7 +169,7 @@
         "binarize_threshold_mode": "MEDIAN",
         "binarize_constant_threshold": 0.0,
         "datetime_cyclical_periods": [],
-        "role": "INPUT",
+        "role": "REJECT",
         "type": "NUMERIC",
         "state": {
           "userModified": false,
@@ -235,7 +235,7 @@
         "binarize_threshold_mode": "MEDIAN",
         "binarize_constant_threshold": 0.0,
         "datetime_cyclical_periods": [],
-        "role": "INPUT",
+        "role": "REJECT",
         "type": "NUMERIC",
         "state": {
           "userModified": false,
@@ -938,11 +938,11 @@
           "scaling": "LOGARITHMIC"
         }
       },
-      "enabled": false
+      "enabled": true
     },
     "leastsquare_regression": {
       "n_jobs": 2,
-      "enabled": false
+      "enabled": true
     },
     "sgd_regression": {
       "epsilon": {
@@ -1006,7 +1006,7 @@
       "max_iter": 1000,
       "tol": 0.001,
       "n_jobs": 2,
-      "enabled": false
+      "enabled": true
     },
     "sgd_classifier": {
       "loss": {
@@ -1284,7 +1284,7 @@
       "coef0": 0.0,
       "tol": 0.001,
       "max_iter": -1,
-      "enabled": false
+      "enabled": true
     },
     "lars_params": {
       "max_features": 0,
@@ -1461,7 +1461,7 @@
       "subsample": 0.9,
       "subsample_freq": 1,
       "use_bagging": false,
-      "enabled": false
+      "enabled": true
     },
     "lightgbm_classification": {
       "boosting_type": {
@@ -1843,7 +1843,7 @@
       "seed": 1337,
       "enable_early_stopping": true,
       "early_stopping_rounds": 4,
-      "enabled": false
+      "enabled": true
     },
     "deep_neural_network_regression": {
       "learning_rate": {
@@ -2283,7 +2283,13 @@
       "epsilon": 1.0E-6,
       "optimizer": "BFGS"
     },
-    "custom_python": [],
+    "custom_python": [
+      {
+        "enabled": true,
+        "code": "from sklearn.linear_model import LinearRegression\nclf \u003d LinearRegression()\n\n",
+        "name": "Custom Python model"
+      }
+    ],
     "plugin_python": {},
     "keras": {
       "epochs": 10,
