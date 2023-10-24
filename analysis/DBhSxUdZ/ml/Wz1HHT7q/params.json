@@ -50,14 +50,13 @@
         "binarize_threshold_mode": "MEDIAN",
         "binarize_constant_threshold": 0.0,
         "datetime_cyclical_periods": [],
-        "role": "REJECT",
+        "role": "TIME",
         "type": "NUMERIC",
         "state": {
           "userModified": false,
           "autoModifiedByDSS": false,
           "recordedMeaning": "Date"
         },
-        "autoReason": "REJECT_IDENTIFIER",
         "customHandlingCode": "",
         "customProcessorWantsMatrix": false,
         "sendToInput": "main"
@@ -247,13 +246,17 @@
       },
       "Date": {
         "generate_derivative": false,
+        "numerical_handling": "REGULAR",
+        "missing_handling": "IMPUTE",
+        "missing_impute_with": "MEAN",
         "impute_constant_value": 0.0,
         "keep_regular": false,
+        "rescaling": "AVGSTD",
         "quantile_bin_nb_bins": 4,
         "binarize_threshold_mode": "MEDIAN",
         "binarize_constant_threshold": 0.0,
         "datetime_cyclical_periods": [],
-        "role": "TIME",
+        "role": "REJECT",
         "type": "NUMERIC",
         "state": {
           "userModified": false,
@@ -311,10 +314,10 @@
       }
     }
   },
-  "timeVariable": "Date",
+  "timeVariable": "col_0_iso",
   "timestepParams": {
-    "numberOfTimeunits": 7,
-    "timeunit": "DAY",
+    "numberOfTimeunits": 1,
+    "timeunit": "MONTH",
     "endOfWeekDay": 1
   },
   "predictionLength": 10,
@@ -2374,7 +2377,7 @@
           "min": 1
         },
         "values": [
-          1
+          12
         ],
         "range": {
           "min": 1,
@@ -2393,7 +2396,7 @@
           "min": 1
         },
         "values": [
-          1
+          12
         ],
         "range": {
           "min": 1,
@@ -2495,7 +2498,7 @@
           "min": 2
         },
         "values": [
-          2
+          12
         ],
         "range": {
           "min": 2,
@@ -2527,7 +2530,7 @@
           "min": 3
         },
         "values": [
-          3
+          13
         ],
         "range": {
           "min": 3,
@@ -2543,7 +2546,7 @@
           "min": 3
         },
         "values": [
-          3
+          13
         ],
         "range": {
           "min": 3,
@@ -3368,7 +3371,7 @@
       "samplingMethod": "COLUMN_ORDERED",
       "maxRecords": 100000,
       "targetRatio": 0.02,
-      "column": "Date",
+      "column": "col_0_iso",
       "ascending": false,
       "withinFirstN": -1,
       "maxReadUncompressedBytes": -1
@@ -3377,7 +3380,7 @@
     "ssdStratified": false,
     "ssdGrouped": false,
     "ssdSeed": 1337,
-    "ssdColumn": "Date",
+    "ssdColumn": "col_0_iso",
     "testOnLargerValues": true,
     "streamAll": true,
     "kfold": false,
