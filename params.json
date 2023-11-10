@@ -142,11 +142,6 @@
     "k8sCluster": {
       "clusterMode": "INHERIT"
     },
-    "llmSettings": {
-      "offerDolly7B": true,
-      "offerFalcon7BInstruct": true,
-      "additionalHuggingFaceModels": []
-    },
     "virtualWebAppBackendSettings": {
       "mode": "INHERIT",
       "preventOverride": false,
@@ -235,11 +230,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 5,
+    "versionNumber": 6,
     "lastModifiedBy": {
       "login": "ashish.angra@shell.com"
     },
-    "lastModifiedOn": 1697805894424,
+    "lastModifiedOn": 1699622376873,
     "extendedProperties": {}
   },
   "creationTag": {
